@@ -1,0 +1,1807 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Firefox OS @ GDG Firenze 2014</title>
+
+    <meta name="description" content="TODO">
+    <meta name="author" content="Luca Greco @ ALCA Società Cooperativa">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="assets/css/revealjs/reveal.min.css">
+    <link rel="stylesheet" href="assets/css/revealjs/theme/one-mozilla.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="assets/css/highlightjs/zenburn.css">
+
+    <!-- For customizations -->
+    <link rel="stylesheet" href="assets/css/decks.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="assets/css/revealjs/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+      .present.bg-white, .present > .bg-white {
+        background: white;
+        opacity: 0.9 !important;
+        padding: 0.2em !important;
+        border-radius: 0.5em;
+      }
+
+      .past.bg-white {
+        opacity: 0 !important;
+      }
+
+      .future.bg-white {
+        opacity: 0 !important;
+      }
+
+      .bg-black * {
+        color: white !important;
+      }
+
+      .layout-avatar img {
+        background: #DBE7A9;
+        border-radius: 6px;
+        border: 12px solid #EEEEBA;
+        margin-top: -24px;
+        padding: 4px;
+      }
+
+      .layout-avatar > div {
+        float: left;
+        margin-right: 0.2em;
+      }
+
+      .layout-avatar * {
+        text-align: left;
+      }
+
+      .mid-size-code code {
+        font-size: 1.5em !important;
+        line-height: 1.2em !important;
+      }
+
+      .reduced-image-size-1 img {
+        max-width: 700px;
+        max-height: 500px;
+      }
+
+      .reduced-image-size-2 img {
+        max-width: 600px;
+        max-height: 450px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        
+
+
+
+
+<section class="bg-white" data-background="res/firefoxos_bg.png" data-transition="">
+
+
+
+
+
+
+<h1 id="-firefox-os-"><strong>Firefox OS</strong></h1>
+<h2 id="where-webapps-become-native">where WebApps become Native</h2>
+<p><small>
+  <strong>&quot;Mobile &amp; Embedded&quot; @ GDG Firenze</strong> - 13 Febbraio 2014
+</small></p>
+<p><br/></p>
+<p><small>
+  Created by <a href="http://github.com/rpl">Luca Greco</a>
+</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<section class="" data-background="orange" data-transition="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-who-am-i-"><strong>Who am I?</strong></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="-software-developer-"><strong>Software Developer</strong></h3>
+<h3 id="-">@</h3>
+<h3 id="alca-societ-cooperativa">ALCA Società Cooperativa</h3>
+<p><img src="res/alcacoop-logo.png" alt="ALCA Società Cooperativa"></p>
+<h2 id="http-alcacoop-it"><a href="http://alcacoop.it">http://alcacoop.it</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="-mozilla-developers-community-"><strong>Mozilla Developers Community</strong>,</h3>
+<h3 id="-code-contributor-"><strong>Code Contributor</strong></h3>
+<h3 id="on">on</h3>
+<h2 id="-firefox-os-simulator-"><em>Firefox OS Simulator</em></h2>
+<h2 id="-firefox-devtools-"><em>Firefox DevTools</em></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="layout-avatar" data-background="" data-transition="">
+
+
+
+
+
+
+<p><div>
+  <h3><a href="http://github.com/rpl"><a href="http://github.com/rpl">http://github.com/rpl</a></a></h3>
+  <h3><a href="http://twitter.com/lucagreco"><a href="http://twitter.com/lucagreco">http://twitter.com/lucagreco</a></a></h3>
+  <h3><a href="mailto:luca.greco@alcacoop.it">luca.greco @ alcacoop.it</a></h3>
+</div>
+<img src="https://2.gravatar.com/avatar/9f9c3875a5c870dad148b5cf1b869aa1?d=https%3A%2F%2Fidenticons.github.com%2F97fc9b260a90d9c0aca468d2e6536980.png&r=x&s=200"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+<section class="" data-background="" data-transition="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-firefox-os-"><strong>Firefox OS</strong></h2>
+<h2 id="platform">Platform</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="res/Firefox_Layers_RGB_IT_bg.jpg" data-transition="none">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-gonk-"><strong>Gonk</strong></h2>
+<ul>
+<li>porting target for <em>Gecko</em></li>
+<li>Lower Level OS Layer</li>
+<li>Linux Kernel + UserSpace Hardware Abstraction Layer</li>
+<li>common open-source projects: libusb, bluez, ...</li>
+<li>shared Android HAL: GPS, Camera, ...</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-gecko-"><strong>Gecko</strong></h2>
+<ul>
+<li>Firefox WebEngine ported on <strong>Gonk</strong></li>
+<li>Platform &amp; Applications Runtime based on Web Technologies</li>
+<li>provides platform access to apps (e.g. networking and graphics stacks, javascript VM, ...)</li>
+<li>provides standard and new experimental WebAPIs (installable WebApps, WebActivities, Vibration, Battery, ...)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-gaia-"><strong>Gaia</strong></h2>
+<ul>
+<li>collection of system apps (e.g. system, homescreen, lockscreen, settings, ...)
+and pre-installed mobile apps (e.g. dialer, sms, contacts, email, browser, marketplace, ...)</li>
+<li>implemented using HTML, CSS and JS</li>
+<li>use Gecko is its interface to the underlying OS</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="res/firefoxos_platform_detailed.png" data-transition="none">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-firefox-os-"><strong>Firefox OS</strong></h2>
+<h3 id="everything-in-the-os-is-openweb-technologies-and-standard-proposals-">everything in the OS is OpenWeb Technologies and Standard Proposals:</h3>
+<ul>
+<li><a href="http://w3c-webmob.github.io/installable-webapps/">http://w3c-webmob.github.io/installable-webapps/</a></li>
+<li><a href="http://www.w3.org/2008/webapps/manifest/">http://www.w3.org/2008/webapps/manifest/</a></li>
+<li><a href="http://www.w3.org/TR/2013/WD-telephony-20130620/">http://www.w3.org/TR/2013/WD-telephony-20130620/</a></li>
+<li><a href="http://www.w3.org/2012/sysapps/#future">http://www.w3.org/2012/sysapps/#future</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+<section class="" data-background="res/firefoxos_bg.png" data-transition="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-firefox-os-"><strong>Firefox OS</strong></h2>
+<h2 id="developer-tools">Developer Tools</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="firefox-developer-tools">Firefox Developer Tools</h2>
+<p><img src="res/firefox_devtools.png" alt="Firefox Developer Tools"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="app-manager">App Manager</h2>
+<p><img src="res/appmanager-apps-panel.png" alt="App Manager DevTool"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<p><img src="res/appmanager-addons.png" alt="App Manager addons"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="installed-app-and-permissions-table-">Installed App and Permissions Table:</h3>
+<p><img src="res/appmanager-permissions.png" alt="App Manager Permissions Table"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="remote-devtools">Remote DevTools</h3>
+<p><img src="res/appmanager-debug.png" alt="App Manager Remote DevTools"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+<section class="" data-background="res/firefoxos_bg.png" data-transition="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-firefox-os-"><strong>Firefox OS</strong></h2>
+<h2 id="apps">Apps</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<p><img src="res/peter-vs-apps.jpg" alt="Peter vs. Apps"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="firefox-os-apps-are">Firefox OS Apps are</h3>
+<h2 id="-webapps-"><strong>WebApps</strong></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="bookmark-to-homescreen">Bookmark to homescreen</h3>
+<p><img src="res/addtohome_fxos.png" alt="bookmark to homescreen"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="openwebapps-">OpenWebApps:</h3>
+<h4 id="webapp-manifest-webapp">WebApp + manifest.webapp</h4>
+<ul>
+<li>application metadata</li>
+<li>install/upgrade/uninstall workflow</li>
+<li>request permissions</li>
+<li>new experimental features (e.g. WebActivities)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="manifest-webapp">manifest.webapp</h2>
+
+
+
+
+<div class="">
+<pre><code class="hljs hljs-js">{
+  <span class="hljs-string">"name"</span>: <span class="hljs-string">"MyAppName"</span>,
+  <span class="hljs-string">"version"</span>: <span class="hljs-string">"1.7"</span>,
+  <span class="hljs-string">"launch_path"</span>: <span class="hljs-string">"/index.html"</span>,
+  <span class="hljs-string">"description"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-string">"developer"</span>: {
+    <span class="hljs-string">"name"</span>: <span class="hljs-string">"..."</span>,
+    <span class="hljs-string">"url"</span>: <span class="hljs-string">"..."</span>
+  },
+  <span class="hljs-string">"locales"</span>: {
+    <span class="hljs-string">"en-US"</span>: {
+      <span class="hljs-string">"name"</span>: <span class="hljs-string">"..."</span>,
+      <span class="hljs-string">"description"</span>: <span class="hljs-string">"..."</span>,
+    },
+  },
+  <span class="hljs-string">"default_locale"</span>: <span class="hljs-string">"en-US"</span>,
+  <span class="hljs-string">"icons"</span>: {
+    <span class="hljs-string">"128"</span>: <span class="hljs-string">"/style/icons/Blank.png"</span>
+  }
+}
+</code></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="application-types">Application Types</h2>
+<p><img src="res/firefoxos-apptypes.png" alt="application types"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="hosted-app">Hosted App</h2>
+<ul>
+<li>regular webapp security restrictions</li>
+<li>served from an HTTP Server</li>
+<li><strong>1 hosted app x origin</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="packaged-app">Packaged App</h2>
+<ul>
+<li>no internet origin</li>
+<li>use a special <strong>app://</strong> protocol</li>
+<li>generated (at install time) uuid as app domain</li>
+<li>packaged apps CAN be <strong>privileged</strong></li>
+<li>all resources packaged into a <em>zip archive</em></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+<section class="" data-background="res/firefoxos_bg.png" data-transition="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-firefox-os-"><strong>Firefox OS</strong></h2>
+<h2 id="apps-permissions">Apps Permissions</h2>
+<h2 id="and-webapis">and WebAPIs</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-arewemobileyet-com-http-arewemobileyet-com-"><a href="http://arewemobileyet.com">arewemobileyet.com</a></h2>
+<p><img src="res/arewemobileyet.png" alt="Are We Mobile Yet?"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-webapi-https-developer-mozilla-org-en-us-docs-webapi-"><a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPI</a></h2>
+<p><img src="res/mdn_webapi.png" alt="WebAPI Docs on MDN"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="security-restrictions">Security Restrictions</h2>
+<h3 id="hosted-apps">Hosted Apps</h3>
+<ul>
+<li>no privileged APIs</li>
+<li>no cross domain requests (but you can use CORS)</li>
+<li>same &quot;webapp in a browser tab&quot; constraints (mostly)</li>
+<li>... but more relaxed storage limits (appcache, indexeddb, localstorage)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="security-restrictions">Security Restrictions</h2>
+<p><strong>Packaged App</strong>:</p>
+<p>all standard and experimental WebAPIs +</p>
+<p>extended <strong>priviliged</strong> WebAPIs available</p>
+<ul>
+<li>cross domain requests (systemXHR)</li>
+<li>tcp sockets</li>
+<li>contacts</li>
+<li>device storage</li>
+<li>file handle</li>
+<li>browser</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="security-restrictions">Security Restrictions</h2>
+<p><strong>Priviliged and Certified Packaged App</strong>:</p>
+<p>enforce a CSP (content security policy) by default:</p>
+<ul>
+<li>no remote scripts injection</li>
+<li>no inline scripts in html tags/attributes</li>
+<li>no javascript URIs</li>
+<li>eval is not allowed</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="ask-for-">ask for...</h2>
+<h1 id="permissions">permissions</h1>
+<h2 id="-if-needed-">(if needed)</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="manifest-webapp-permission-fragment">manifest.webapp permission fragment</h2>
+
+
+
+
+<div class="">
+<pre><code class="hljs hljs-js">...
+<span class="hljs-string">"type"</span>: <span class="hljs-string">"privileged"</span>,
+<span class="hljs-string">"permissions"</span>: {
+  <span class="hljs-string">"contacts"</span>: {
+    <span class="hljs-string">"description"</span>: <span class="hljs-string">"Required for ..."</span>,
+    <span class="hljs-string">"access"</span>: <span class="hljs-string">"readcreate"</span>
+    },
+  <span class="hljs-string">"alarms"</span>: {
+    <span class="hljs-string">"description"</span>: <span class="hljs-string">"Required to ..."</span>
+  }
+}
+...
+</code></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<p><img src="res/fxos_app_permissions.png" alt="Firefox OS App Settings"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="webapi-example">WebAPI example</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="webactivities">WebActivities</h3>
+
+
+
+
+<div class="">
+<pre><code class="hljs hljs-js"><span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> MozActivity == <span class="hljs-string">"function"</span>) {
+  ...
+} <span class="hljs-keyword">else</span> {
+  console.log(<span class="hljs-string">"FALLBACK: call WebActivity"</span> +
+              <span class="hljs-string">" 'pick image'"</span>);
+  <span class="hljs-keyword">return</span>;
+}
+</code></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="webactivities">WebActivities</h3>
+
+
+
+
+<div class="">
+<pre><code class="hljs hljs-js"><span class="hljs-keyword">var</span> pick = <span class="hljs-keyword">new</span> MozActivity({
+  name: <span class="hljs-string">"pick"</span>,
+  data: {
+    type: [<span class="hljs-string">"image/png"</span>,
+           <span class="hljs-string">"image/jpeg"</span>]
+  }
+});
+</code></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="webactivities">WebActivities</h3>
+
+
+
+
+<div class="">
+<pre><code class="hljs hljs-js">pick.onsuccess = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+  <span class="hljs-keyword">var</span> img = document.createElement(<span class="hljs-string">"img"</span>);
+  img.src = window.URL.
+    createObjectURL(<span class="hljs-keyword">this</span>.result.blob);
+  <span class="hljs-keyword">var</span> viewer = document.
+    querySelector(<span class="hljs-string">"#image-viewer"</span>);
+  viewer.appendChild(img);
+};
+
+pick.onerror = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span> ... };
+</code></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="apps-can-define-new-webactivities">Apps can define new WebActivities</h3>
+
+
+
+
+<div class="">
+<pre><code class="hljs hljs-js">  ...
+  <span class="hljs-string">"activities"</span>: {
+    <span class="hljs-string">"pick"</span>: {
+      <span class="hljs-string">"filters"</span>: {
+        <span class="hljs-string">"type"</span>: [<span class="hljs-string">"image/*"</span>, <span class="hljs-string">"image/jpeg"</span>]
+      },
+      <span class="hljs-string">"disposition"</span>: <span class="hljs-string">"inline"</span>,
+      <span class="hljs-string">"returnValue"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"href"</span>: <span class="hljs-string">"/index.html#pick"</span>
+    },
+    ...
+</code></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+<section class="" data-background="res/firefoxos_bg.png" data-transition="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="-more-docs-and-examples-"><strong>More Docs and Examples</strong></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="examples">Examples</h2>
+<ul>
+<li><a href="https://github.com/robnyman/Firefox-OS-Boilerplate-App">Firefox OS Boilerplate App</a></li>
+<li><a href="https://github.com/rpl/firefoxos-simulator-walkthrough">firefoxos-simulator-walkthrough example app</a></li>
+<li><a href="https://github.com/Jaxo/fxosstub">FxOS Stub App</a></li>
+<li><a href="http://buildingfirefoxos.com/">buildingfirefoxos.com - gaia building blocks and style guide</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="articles">Articles</h2>
+<ul>
+<li><a href="https://hacks.mozilla.org/category/firefox-os/">Firefox OS articles on hacks.mozilla.org</a></li>
+<li><a href="http://jaxo.github.io/fxosstub/docs/index.html">FxOS Stub App walkthrough</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="mdn-app-developers-doc-pages">MDN App Developers Doc Pages</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Apps">Apps start page on developer.mozilla.org</a></li>
+<li><a href="https://developer.mozilla.org/en-US/Apps/Reference">Apps Development API Reference</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPI start page on developer.mozilla.org</a></li>
+<li><a href="https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache">Using the application cache on developer.mozilla.org</a></li>
+<li><a href="https://developer.mozilla.org/en-US/Apps/CSP">Apps Content Security Policy on developer.mozilla.org</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h3 id="firefox-marketplace-docs-tools">Firefox Marketplace Docs &amp; Tools</h3>
+<ul>
+<li><a href="https://marketplace.firefox.com/developers">Developers start page on marketplace.firefox.com</a></li>
+<li><a href="https://marketplace.firefox.com/developers/validator">Marketplace App Validator</a></li>
+<li><a href="https://marketplace.firefox.com/developers/in-app-keys/">Marketplace Test Payments Generator</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+  <section class="" data-background="" data-transition="">
+
+
+
+
+
+
+<h2 id="mdn-firefox-os-doc-pages">MDN Firefox OS Doc Pages</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en/docs/Mozilla/Firefox_OS">Firefox OS start page on developer.mozilla.org</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Architecture">Firefox OS Platform Architecture</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security/Security_model">Firefox OS Security Model on developer.mozilla.org</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="assets/js/head.min.js"></script>
+    <script src="assets/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+      // Parallax scrolling
+      // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+      // parallaxBackgroundSize: '2100px 900px',
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+      { src: 'assets/js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'assets/js/revealjs-plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'assets/js/revealjs-plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//      { src: 'assets/js/revealjs-plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'assets/js/revealjs-plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'assets/js/revealjs-plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+      });
+
+    </script>
+<!--script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3890753-6");
+pageTracker._trackPageview();
+} catch(err) {}</script-->
+
+  </body>
+</html>

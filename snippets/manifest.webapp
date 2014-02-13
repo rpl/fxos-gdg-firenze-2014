@@ -1,0 +1,20 @@
+{
+  "name": "MyAppName",
+  "version": "1.7",
+  "launch_path": "/index.html",
+  "description": "...",
+  "developer": {
+    "name": "...",
+    "url": "..."
+  },
+  "locales": {
+    "en-US": {
+      "name": "...",
+      "description": "...",
+    },
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "128": "/style/icons/Blank.png"
+  }
+}

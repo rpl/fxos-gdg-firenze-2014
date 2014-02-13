@@ -1,0 +1,12 @@
+...
+"type": "privileged",
+"permissions": {
+  "contacts": {
+    "description": "Required for ...",
+    "access": "readcreate"
+    },
+  "alarms": {
+    "description": "Required to ..."
+  }
+}
+...
